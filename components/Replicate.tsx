@@ -13,7 +13,7 @@ export default function Replicate() {
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
-        const response = await fetch("/api/predictions/", {
+        const response = await fetch("", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -47,10 +47,6 @@ export default function Replicate() {
 
     return (
         <div className='container'>
-            <Head>
-                <title>Replicate + Next.js</title>
-            </Head>
-
             <p>
                 Dream something with{" "}
                 <a href="https://replicate.com/stability-ai/stable-diffusion">SDXL</a>:
